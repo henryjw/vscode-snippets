@@ -1,0 +1,61 @@
+{
+	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Test setup": {
+		"prefix": "test-setup",
+		"body": [
+			"\"use strict\";",
+			"",
+			"describe(\"$1\", () => {",
+			"\tit.todo(\"$2\");",
+			"});",
+			""
+		],
+		"description": "Mocha test setup"
+	},
+	"Import local type": {
+		"prefix": "import-type-local",
+		"body": "/** @typedef { import('$1').$2 } $3 */",
+		"description": "Import local type annotation"
+	},
+	"Use strict": {
+		"prefix": "strict",
+		"body": "\"use strict\";"
+	},
+	"Set up module": {
+		"prefix": "module-setup",
+		"body": [
+			"\"use strict\";",
+			"",
+			"module.exports = {",
+			"",
+			"};",
+			""
+		]
+	},
+	"Not yet implemented error": {
+		"prefix": "not-implemented-error",
+		"body": "new Error(\"Not yet implemented\");"
+	},
+	"Throw expected error": {
+		"prefix": "not-expected-error",
+		"body": "throw new Error(\"Expected error\");",
+		"description": "Used for testing"
+	},
+	"require import": {
+		"prefix": "require-import",
+		"body": "const $2 = require(\"$1\")",
+		"description": "Nodejs import"
+	}
+}
